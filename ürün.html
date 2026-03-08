@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Emirgan Group
+  </h1>
+</body>
+</html> 
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ürün Adet Formu — Tek Sayfa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #2b5d4f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #244a40;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ürün Adet Formu</h1>
+  <form id="productForm">
+    <label for="pogacaSade">Poğaça sade</label>
+    <input type="number" id="pogacaSade" name="pogacaSade" min="0" placeholder="Adet girin" />
+
+    <label for="pogacaPeynirli">Poğaça peynirli</label>
+    <input type="number" id="pogacaPeynirli" name="pogacaPeynirli" min="0" placeholder="Adet girin" />
+
+    <label for="pogacaDereotlu">Poğaça dereotlu</label>
+    <input type="number" id="pogacaDereotlu" name="pogacaDereotlu" min="0" placeholder="Adet girin" />
+
+    <label for="pogacaZeytinli">Poğaça zeytinli</label>
+    <input type="number" id="pogacaZeytinli" name="pogacaZeytinli" min="0" placeholder="Adet girin" />
+
+    <label for="pogacaPatatesli">Poğaça patatesli</label>
+    <input type="number" id="pogacaPatatesli" name="pogacaPatatesli" min="0" placeholder="Adet girin" />
+
+    <label for="pogacaKasarlı">Poğaça kaşarlı</label>
+    <input type="number" id="pogacaKasarlı" name="pogacaKasarlı" min="0" placeholder="Adet girin" />
+
+    <label for="ankaraSimit">Ankara simit</label>
+    <input type="number" id="ankaraSimit" name="ankaraSimit" min="0" placeholder="Adet girin" />
+
+    <label for="tereyagliSimit">Tereyağlı simit</label>
+    <input type="number" id="tereyagliSimit" name="tereyagliSimit" min="0" placeholder="Adet girin" />
+
+    <label for="sutluSimit">Sütlü simit</label>
+    <input type="number" id="sutluSimit" name="sutluSimit" min="0" placeholder="Adet girin" />
+
+    <label for="borekGul">Börek (GÜL)</label>
+    <input type="number" id="borekGul" name="borekGul" min="0" placeholder="Adet girin" />
+
+    <label for="borekKol">Börek (KOL)</label>
+    <input type="number" id="borekKol" name="borekKol" min="0" placeholder="Adet girin" />
+
+    <label for="acmaKasarlı">Açma kaşarlı</label>
+    <input type="number" id="acmaKasarlı" name="acmaKasarlı" min="0" placeholder="Adet girin" />
+
+    <label for="acmaPeynirli">Açma peynirli</label>
+    <input type="number" id="acmaPeynirli" name="acmaPeynirli" min="0" placeholder="Adet girin" />
+
+    <label for="acmaPatatesli">Açma patatesli</label>
+    <input type="number" id="acmaPatatesli" name="acmaPatatesli" min="0" placeholder="Adet girin" />
+
+    <label for="acmaSade">Açma sade</label>
+    <input type="number" id="acmaSade" name="acmaSade" min="0" placeholder="Adet girin" />
+
+    <label for="acmaZeytinli">Açma zeytinli</label>
+    <input type="number" id="acmaZeytinli" name="acmaZeytinli" min="0" placeholder="Adet girin" />
+
+    <label for="cikolataliAcma">Çikolatalı açma</label>
+    <input type="number" id="cikolataliAcma" name="cikolataliAcma" min="0" placeholder="Adet girin" />
+
+    <label for="sandvic">Sandviç</label>
+    <input type="number" id="sandvic" name="sandvic" min="0" placeholder="Adet girin" />
+
+    <button type="submit">Gönder</button>
+  </form>
+
+  <script>
+    document.getElementById('productForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      let result = 'Ürün Adetleri:\n';
+      for (const [key, value] of formData.entries()) {
+        result += `${key}: ${value || 0}\n`;
+      }
+      alert(result);
+    });
+  </script>
+</body>
+</html>
+ 
+
+edit by Can Gülateş
+  
